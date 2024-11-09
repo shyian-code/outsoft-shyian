@@ -1,3 +1,4 @@
+/* BEGIN Hero section styles file */
 .hero-section {
   padding: 133px 0;
   z-index: 1;
@@ -147,3 +148,4 @@
 .icon-twiter::before {
   mask-image: url("../img/icons/twitter-icon.svg");
 }
+/* END Hero section styles file */

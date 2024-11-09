@@ -1,3 +1,4 @@
+/* BEGIN Banner section styles file */
 .banner-section {
   margin-bottom: -95px;
   position: relative;
@@ -40,3 +41,4 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+/* END Banner section styles file */

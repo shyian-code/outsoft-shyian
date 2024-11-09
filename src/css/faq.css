@@ -1,3 +1,4 @@
+/* BEGIN FAQ section styles file */
 .faq-section {
   padding: 100px 0 280px;
 }
@@ -20,12 +21,12 @@
 .faq-section__accordion-wrapper::after {
   content: '';
   position: absolute;
-  width: 449px; /* Width of the ellipse */
-  height: 901px; /* Height of the ellipse */
-  background-color: #3BC1CD; /* Fill color of the ellipse */
-  opacity: 0.2; /* To match the 20% opacity */
-  filter: blur(201px); /* Layer blur of 201px */
-  border-radius: 50%; /* To make it an ellipse */
+  width: 449px;
+  height: 901px;
+  background-color: #3BC1CD;
+  opacity: 0.2;
+  filter: blur(201px);
+  border-radius: 50%;
 }
 
 .faq-section__accordion-wrapper::before {
@@ -36,7 +37,7 @@
 
 .faq-section__accordion-wrapper::after {
   top: 200px;
-  right: -410px; /* Position to the right side */
+  right: -410px;
   z-index: 3;
 }
 
@@ -83,3 +84,4 @@
   transition: max-height 0.2s ease-out;
   margin-bottom: 20px;
 }
+/* END FAQ section styles file */

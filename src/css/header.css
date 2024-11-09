@@ -1,3 +1,4 @@
+/* BEGIN Header styles file */
 .main-header {
   padding: 50px 0 30px;
   border-bottom: 1px solid #737373;
@@ -10,3 +11,23 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.main-header__navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-header__burger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .main-header__burger-menu {
+      display: block;
+  }
+}
+/* END Header styles file */
