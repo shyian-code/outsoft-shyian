@@ -1,5 +1,7 @@
 .hero-section {
   padding: 133px 0;
+  position: relative;
+  z-index: 1;
 }
 .hero-section__container {
   text-align: center;
@@ -8,11 +10,30 @@
   align-items: center;
 }
 
-.hero-section__socials-list {
-  display: flex;
-  gap: 35px;
-  flex-direction: row;
-  margin-bottom: 41px;
+.hero-section__container::before {
+  content: '';
+  position: absolute;
+  z-index: 3;
+  top: -15px;
+  right: 320px;
+  width: 542px;
+  height: 214px;
+  background-image: url('../img/hand-with-flower.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-section__container::after {
+  content: '';
+  position: absolute;
+  z-index: 99;
+  bottom: 140px;
+  left: 305px;
+  width: 387px;
+  height: 186px;
+  background-image: url('../img/hand.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-section__main-title {
@@ -31,15 +52,55 @@
   color: transparent;
 }
 
-/* .hero-section__main-title::before {
-
+.hero-section__main-title::before {
+  content: '';
+  position: absolute;
+  top: 120px;
+  left: -160px;
+  width: 142px;
+  height: 148px;
+  background-image: url('../img/title-moon.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-section__main-title::after {
+  content: '';
+  position: absolute;
+  bottom: -70px;
+  right: -15px;
+  width: 206px;
+  height: 206px;
+  background-image: url('../img/title-portal.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-section__direction-arrow {
+  padding-top: 85px;
+}
 
-} */
 
 /* Icons style */
+.hero-section__socials-list {
+  position: relative;
+  display: flex;
+  gap: 35px;
+  flex-direction: row;
+  margin-bottom: 41px;
+}
+
+.hero-section__socials-list::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -395px;
+  width: 206px;
+  height: 206px;
+  background-image: url('../img/hero-wave.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .icon {
   display: flex;
   gap: 5px;
