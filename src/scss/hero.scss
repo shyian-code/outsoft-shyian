@@ -1,0 +1,156 @@
+/* BEGIN Hero section styles file */
+.hero-section {
+  padding: 133px 0;
+  z-index: 1;
+
+  &__container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__main-title-wrapper {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      z-index: 3;
+      top: -240px;
+      right: -420px;
+      width: 542px;
+      max-width: 100%;
+      height: 214px;
+      background-image: url('../img/hand-with-flower.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      z-index: 99;
+      bottom: -10px;
+      left: -375px;
+      width: 387px;
+      max-width: 100%;
+      height: 186px;
+      background-image: url('../img/hand.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.hero-section__main-title {
+  position: relative;
+  font-family: 'Newake', sans-serif;
+  max-width: 892px;
+  font-size: 260px;
+  letter-spacing: -14px;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: url("../img/hero-title-mask.webp");
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 120px;
+    left: -160px;
+    width: 142px;
+    height: 148px;
+    background-image: url('../img/title-moon.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    right: -15px;
+    width: 206px;
+    height: 206px;
+    background-image: url('../img/title-portal.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero-section__direction-arrow {
+  padding-top: 85px;
+}
+
+
+/* Icons style */
+.hero-section {
+  &__socials-list {
+    position: relative;
+    display: flex;
+    gap: 35px;
+    flex-direction: row;
+    margin-bottom: 41px;
+  }
+
+  &__socials-list::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -395px;
+    width: 206px;
+    height: 206px;
+    background-image: url('../img/hero-wave.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.icon {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 6px;
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    color: #000;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: currentColor;
+  }
+}
+
+.icon-instagram::before {
+  mask-image: url("../img/icons/instagram-icon.svg");
+}
+
+.icon-facebook::before {
+  mask-image: url("../img/icons/facebook-icon.svg");
+}
+
+.icon-youtube::before {
+  mask-image: url("../img/icons/youtube-icon.svg");
+}
+
+.icon-tiktok::before {
+  mask-image: url("../img/icons/tiktok-icon.svg");
+}
+
+.icon-twiter::before {
+  mask-image: url("../img/icons/twitter-icon.svg");
+}
+/* END Hero section styles file */

@@ -60,14 +60,37 @@
   box-shadow: 0px 4px 20px rgba(30, 30, 30, 0.04);
 }
 
-.faq-section__accordion-title:after {
+
+
+/* Стилі для іконки стрілки */
+.faq-section__accordion-arrow-icon {
   position: absolute;
-  content: '\02795';
-  font-size: 13px;
-  color: #777;
-  right: 269px;
-  bottom: 30px;
+  right: 40px;
+  bottom: 50%;
+  transform: translateY(50%);
+  transition: transform 0.4s ease;
 }
+
+.faq-section__accordion-arrow-icon img {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.4s ease;
+}
+
+/* Обертання іконки при активному стані */
+.faq-section__accordion-title.active .faq-section__accordion-arrow-icon img {
+  transform: rotate(180deg);
+}
+
+
+// .faq-section__accordion-title:after {
+//   position: absolute;
+//   content: '\02795';
+//   font-size: 13px;
+//   color: #777;
+//   right: 269px;
+//   bottom: 30px;
+// }
 
 .active, .faq-section__accordion-title:hover {
   background-color: #daf7ff;

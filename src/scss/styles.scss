@@ -1,0 +1,18 @@
+/**
+  |============================
+  | Include SCSS partials
+  |============================
+*/
+
+/* Common styles */
+@import './reset';
+@import './container';
+@import './animations';
+@import './fonts';
+
+/* Sections style */
+@import './header';
+@import './hero';
+@import './faq';
+@import './banner';
+@import './footer';
