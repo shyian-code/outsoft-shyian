@@ -6,8 +6,9 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
+    base: command === 'serve' ? '/' : '/outsoft-shyian/', // Вказуємо базовий шлях для GitHub Pages
     define: {
-      [command === 'serve' ? '/' : '/outsoft-shyian/']: {},
+      global: {}, // Залишаємо "global" як порожній об'єкт
     },
     root: 'src',
     build: {
