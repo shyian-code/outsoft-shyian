@@ -1,6 +1,5 @@
 .hero-section {
   padding: 133px 0;
-  position: relative;
   z-index: 1;
 }
 .hero-section__container {
@@ -10,26 +9,35 @@
   align-items: center;
 }
 
-.hero-section__container::before {
+.hero-section__main-title-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section__main-title-wrapper::before {
   content: '';
   position: absolute;
+  z-index: 2;
   z-index: 3;
-  top: -15px;
-  right: 320px;
+  top: -240px;
+  right: -420px;
   width: 542px;
+  max-width: 100%;
   height: 214px;
   background-image: url('../img/hand-with-flower.webp');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.hero-section__container::after {
+.hero-section__main-title-wrapper::after {
   content: '';
   position: absolute;
+  z-index: 2;
   z-index: 99;
-  bottom: 140px;
-  left: 305px;
+  bottom: -10px;
+  left: -375px;
   width: 387px;
+  max-width: 100%;
   height: 186px;
   background-image: url('../img/hand.webp');
   background-size: cover;
