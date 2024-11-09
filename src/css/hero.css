@@ -17,17 +17,17 @@
 
 .hero-section__main-title {
   position: relative;
-  font-family: var(--ff-newake);
+  font-family: 'Newake';
   max-width: 892px;
   font-size: 260px;
   letter-spacing: -14px;
   line-height: 1em;
   text-transform: uppercase;
   text-align: center;
-  background-image: url("/src/img/hero-title-mask.webp");
+  background-image: url("../img/hero-title-mask.webp");
   background-size: cover;
   background-position: center;
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -38,3 +38,43 @@
 .hero-section__main-title::after {
 
 } */
+
+/* Icons style */
+.icon {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 6px;
+}
+.icon::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  color: #000;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: currentColor;
+}
+
+.icon-instagram::before {
+  mask-image: url("../img/icons/instagram-icon.svg");
+}
+
+.icon-facebook::before {
+  mask-image: url("../img/icons/facebook-icon.svg");
+}
+
+.icon-youtube::before {
+  mask-image: url("../img/icons/youtube-icon.svg");
+}
+
+.icon-tiktok::before {
+  mask-image: url("../img/icons/tiktok-icon.svg");
+}
+
+.icon-twiter::before {
+  mask-image: url("../img/icons/twitter-icon.svg");
+}
