@@ -1,0 +1,53 @@
+.faq-section {
+  padding: 100px 0 280px;
+}
+.faq-section__title {
+  font-family: var(--ff-newake);
+  font-size: 64px;
+  color: var(--c-black);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-section__title .active {
+  background-color: #ccc;
+}
+
+.faq-section__title .active:after {
+  content: "\2212";
+}
+
+.faq-section__title__accordion {
+  font-family: var(--ff-inter);
+  font-size: 28px;
+  background-color: var(--c-white);
+  color: var(--c-dark-grey);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.faq-section__title__accordion:hover {
+  background-color: #ccc;
+}
+
+.faq-section__title__accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.faq-section__titlepanel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

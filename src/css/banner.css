@@ -1,0 +1,17 @@
+.banner-section {
+  margin-bottom: -95px;
+  position: relative;
+  z-index: 9;
+}
+.banner-section__wrapper {
+  background-color: #0282a6;
+  border-radius: 15px;
+  padding: 68px 219px 68px 268px;
+}
+
+.banner-section__text {
+  font-family: var(--ff-gotham);
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--c-white);
+}
