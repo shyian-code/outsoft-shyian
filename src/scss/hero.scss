@@ -8,109 +8,108 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    // overflow: hidden;
   }
 
   &__main-title-wrapper {
-    position: relative;
+    // position: relative;
     z-index: 1;
-
-    &::before {
+  
+    &::before,
+    &::after {
       content: '';
       position: absolute;
-      z-index: 2;
-      z-index: 3;
-      top: -240px;
-      right: -420px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  
+    &::before {
+      top: -145px;
+      right: 10%; /* Центруємо відносно правої сторони */
+      transform: translateX(250px); /* Зміщення без виходу за межі */
       width: 542px;
       max-width: 100%;
       height: 214px;
       background-image: url('../img/hand-with-flower.webp');
-      background-size: cover;
-      background-repeat: no-repeat;
+      z-index: 3;
     }
-
+  
     &::after {
-      content: '';
-      position: absolute;
-      z-index: 2;
-      z-index: 99;
-      bottom: -10px;
-      left: -375px;
+      bottom: 210px;
+      left: 19%; /* Центруємо відносно лівої сторони */
+      transform: translateX(-375px); /* Зміщення без виходу за межі */
       width: 387px;
       max-width: 100%;
       height: 186px;
       background-image: url('../img/hand.webp');
+      z-index: 99;
+    }
+  }
+  
+
+  &__main-title {
+    position: relative;
+    font-family: 'Newake', sans-serif;
+    max-width: 892px;
+    font-size: 260px;
+    letter-spacing: -14px;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    background-image: url("../img/hero-title-mask.webp");
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
       background-size: cover;
       background-repeat: no-repeat;
     }
-  }
-}
 
-.hero-section__main-title {
-  position: relative;
-  font-family: 'Newake', sans-serif;
-  max-width: 892px;
-  font-size: 260px;
-  letter-spacing: -14px;
-  line-height: 1em;
-  text-transform: uppercase;
-  text-align: center;
-  background-image: url("../img/hero-title-mask.webp");
-  background-size: cover;
-  background-position: center;
-  -webkit-background-clip: text;
-  color: transparent;
+    &::before {
+      top: 120px;
+      left: -160px;
+      width: 142px;
+      height: 148px;
+      background-image: url('../img/title-moon.webp');
+    }
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 120px;
-    left: -160px;
-    width: 142px;
-    height: 148px;
-    background-image: url('../img/title-moon.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
+    &::after {
+      bottom: -70px;
+      right: -15px;
+      width: 206px;
+      height: 206px;
+      background-image: url('../img/title-portal.webp');
+    }
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -70px;
-    right: -15px;
-    width: 206px;
-    height: 206px;
-    background-image: url('../img/title-portal.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
+  &__direction-arrow {
+    padding-top: 85px;
   }
-}
 
-.hero-section__direction-arrow {
-  padding-top: 85px;
-}
-
-
-/* Icons style */
-.hero-section {
   &__socials-list {
     position: relative;
     display: flex;
     gap: 35px;
     flex-direction: row;
     margin-bottom: 41px;
-  }
 
-  &__socials-list::before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: -395px;
-    width: 206px;
-    height: 206px;
-    background-image: url('../img/hero-wave.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -395px;
+      width: 206px;
+      height: 206px;
+      background-image: url('../img/hero-wave.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -153,4 +152,5 @@
 .icon-twiter::before {
   mask-image: url("../img/icons/twitter-icon.svg");
 }
+
 /* END Hero section styles file */
