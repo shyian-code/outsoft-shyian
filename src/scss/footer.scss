@@ -2,29 +2,33 @@
 .main-footer {
   background-color: #292929;
   padding: 145px 0 75px;
-}
-.main-footer__wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
-.main-footer__company-logo {
-  color: #fff;
-  font-size: 32px;
-}
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-.main-footer__nav-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 30px;
-}
+  &__company-logo {
+    color: #fff;
+    font-size: 32px;
+  }
 
-.main-footer__nav-list-item-link {
-  color: #fff;
-  font-size: 20px;
-  font-family: 'Gotham-Book';
-  font-weight: 400;
+  &__nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__nav-list-item-link {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Gotham-Book';
+    font-weight: 400;
+  
+    &:hover {
+      color: #939E50;
+    }
+  }
 }
 /* END Footer styles file */

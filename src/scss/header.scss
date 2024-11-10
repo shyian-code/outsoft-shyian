@@ -4,25 +4,25 @@
   position: relative;
   z-index: 8;
   border-bottom: 1px solid #737373;
-}
 
-.main-header__wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-.main-header__navigation {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 
-.main-header__burger-menu {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
+  &__burger-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
 }
 
 @media (max-width: 768px) {
